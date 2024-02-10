@@ -23,6 +23,23 @@ npm install
 npm start
 ```
 
+## Endpoints
+
+You could use any app to send http requests like *Postman*, *Insomnia*, etc. </br>
+Recomends to use [hoppscotch](https://hoppscotch.io/) to use the [real time tab](https://hoppscotch.io/realtime/websocket)
+
+### Http: 
+`http://localhost:3333/polls`
+* `GET /polls/:pollId - Find poll by Id`
+* `POST /polls - Create a poll`
+* `POST /polls/:pollId/votes - Vote on Poll`
+
+### WebSocket: 
+`ws://localhost:3333/polls`
+
+
+# All topics below are my documentation studies
+
 ## typescript dependencie for node compile
 
 ```
@@ -93,3 +110,17 @@ The file will be stay at main directory as
 
 ```
 
+## Redis
+
+It's an open-source, in-memory data store used by millions of developers as a cache, vector database, document database, streaming engine, and message broker. </br>
+[Redis documentation](https://redis.io/docs/) </br>
+
+To use with Node.js, let's install the dependencie `npm install ioredis` a translator of redis to facilitad use in typescript [ioredis](https://github.com/redis/ioredis)
+
+It was use only this two commands properties
+ - ZINCRBY
+    - `zincrby(key, increment, id of key incremented)`
+ - ZRANGE
+    - `zrange(key, min, max, withscores)`
+
+## Fastify - doc in progress
